@@ -24,6 +24,12 @@ public class User {
         }
         return new String(password);
     }
+    public void changePassword(String password){
+        this.password = password;
+    }
+    public String getPassword() {
+        return password;
+    }
 
     @Override
     public String toString() {
