@@ -1,10 +1,12 @@
 package pl.sda.rav;
 
+import java.time.LocalDate;
+
 public abstract class Vehicels{
     private String vin;
-    private String status;
+    private boolean status;
     private String name;
-    private int productionDate;
+    private LocalDate productionDate;
 
     @Override
     public String toString() {
@@ -16,7 +18,7 @@ public abstract class Vehicels{
                 '}';
     }
 
-    public Vehicels(String vin, String status, String name, int productionDate) {
+    public Vehicels(String vin, boolean status, String name, LocalDate productionDate) {
         this.vin = vin;
         this.status = status;
         this.name = name;

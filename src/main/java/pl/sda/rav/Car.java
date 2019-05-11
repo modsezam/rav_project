@@ -1,14 +1,18 @@
 package pl.sda.rav;
 
+import java.time.LocalDate;
+
 public class Car extends Vehicels {
    private int maxDistanceKm;
-   private String bodyType;
+   private BodyType bodyType;
 
 
-   public Car(String vin, String status, String name, int productionDate, int maxDistanceKm, String bodyType) {
+   public Car(String vin, boolean status, String name, LocalDate productionDate, int maxDistanceKm, BodyType bodyType) {
       super(vin, status, name, productionDate);
       this.maxDistanceKm = maxDistanceKm;
       this.bodyType = bodyType;
+
+
 
    }
 }
