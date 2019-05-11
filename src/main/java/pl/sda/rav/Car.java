@@ -1,11 +1,9 @@
 package pl.sda.rav;
 
-public class Car {
-   private String vin;
-   private String status;
-   private String name;
-   private int productionDate;
+public class Car extends Vehicels {
    private int maxDistance;
    private String bodyType;
+
+
 }
 
