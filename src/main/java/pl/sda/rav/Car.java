@@ -7,6 +7,9 @@ public class Car extends Vehicels {
 
    public Car(String vin, String status, String name, int productionDate, int maxDistanceKm, String bodyType) {
       super(vin, status, name, productionDate);
+      this.maxDistanceKm = maxDistanceKm;
+      this.bodyType = bodyType;
+
    }
 }
 
