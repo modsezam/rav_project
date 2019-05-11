@@ -3,7 +3,7 @@ package pl.sda.rav;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class OdrerDao {
+public class OrderDao {
 
     ArrayList<Order> orders = new ArrayList<>();
 
@@ -11,8 +11,10 @@ public class OdrerDao {
         boolean result = false;
 
         for (Order order : orders) {
-            if (order.period.isAvailability(startDate, endTime) == true){
-                result = true;
+            if (order.vehicels.getVin().equals(vin)){
+                if (!order.period.isAvailability(startDate, endTime)){
+                    result = true;
+                }
             }
         }
 
