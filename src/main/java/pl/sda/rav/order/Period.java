@@ -1,4 +1,4 @@
-package pl.sda.rav;
+package pl.sda.rav.order;
 
 import java.time.LocalDate;
 
@@ -14,7 +14,7 @@ public class Period {
         this.endDate = endDate;
     }
 
-    public boolean isAvailability (LocalDate startDate, LocalDate endDate){
+    public boolean isContains (LocalDate startDate, LocalDate endDate){
         if (endDate.isBefore(this.startDate)){
             return true;
         }
