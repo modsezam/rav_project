@@ -1,11 +1,10 @@
-package pl.sda.rav;
+package pl.sda.rav.order;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import pl.sda.rav.order.Period;
 
 import java.time.LocalDate;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PeriodTest {
 
