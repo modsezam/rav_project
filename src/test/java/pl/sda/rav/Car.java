@@ -7,7 +7,5 @@ public class Car {
    private int productionDate;
    private int maxDistance;
    private String bodyType;
-
-
 }
 
