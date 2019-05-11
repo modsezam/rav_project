@@ -20,10 +20,10 @@ class PeriodTest {
         LocalDate endTime = (LocalDate.of(2019, 11, 10));
 
         //when
-        boolean test = car1.isAvailability(startTime, endTime);
-        boolean test2 = car2.isAvailability(startTime, endTime);
-        boolean test3 = car3.isAvailability(startTime, endTime);
-        boolean test4 = car3.isAvailability(startTime, endTime);
+        boolean test = car1.isContains(startTime, endTime);
+        boolean test2 = car2.isContains(startTime, endTime);
+        boolean test3 = car3.isContains(startTime, endTime);
+        boolean test4 = car3.isContains(startTime, endTime);
 
         //then
         Assertions.assertTrue(test);
