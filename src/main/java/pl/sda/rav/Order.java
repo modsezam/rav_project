@@ -4,9 +4,12 @@ import java.time.LocalDate;
 
 public class Order {
 
-    private int id;
+    private static int id;
     Period period;
+    Vehicels vehicels;
+    User user;
 
-
-
+    public Order() {
+        id++;
+    }
 }
