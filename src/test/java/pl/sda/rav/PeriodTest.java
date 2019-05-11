@@ -11,7 +11,6 @@ class PeriodTest {
 
     @Test
     void isAvailabilityTest() {
-
         //given
         Period car1 = new Period(LocalDate.of(2019, 11, 1), LocalDate.of(2019, 11, 4));
         Period car2 = new Period(LocalDate.of(2019, 11, 1), LocalDate.of(2019, 11, 12));
