@@ -11,7 +11,7 @@ public class OrderDao {
 
         for (Order order : orders) {
             if (order.vehicels.getVin().equals(vin)){
-                if (!order.period.isAvailability(startDate, endTime)){
+                if (!order.period.isContains(startDate, endTime)){
                     return false;
                 }
             }
