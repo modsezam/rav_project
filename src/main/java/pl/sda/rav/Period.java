@@ -10,4 +10,22 @@ public class Period {
         this.startDate = startDate;
         this.endDate = endDate;
     }
+
+    public boolean isAvailability (LocalDate startDate, LocalDate endDate){
+
+        boolean result = false;
+
+        if (startDate.isBefore(this.startDate) && endDate.isBefore(this.startDate)){
+            result = true;
+        }
+
+        if (startDate.isAfter(this.endDate) && endDate.isAfter(this.endDate)){
+            result = true;
+        }
+
+        return result;
+    }
+
+
+
 }
