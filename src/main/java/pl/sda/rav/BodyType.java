@@ -11,4 +11,8 @@ public enum BodyType {
     BodyType(String symbol) {
         this.bodyType = symbol;
     }
+
+    public String getBodyType() {
+        return bodyType;
+    }
 }

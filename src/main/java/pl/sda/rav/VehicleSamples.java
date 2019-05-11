@@ -1,10 +1,12 @@
 package pl.sda.rav;
 
+import java.time.LocalDate;
+
 public class VehicleSamples {
 
-    public static String VEHICLE1 = "7387483264, true, Mercedes, 2017";
-    public static String VEHICLE2 = "7125435345, true, Audi, 2010";
-    public static String VEHICLE3 = "8756435353, true, BMW, 2011";
-    public static String VEHICLE4 = "6454545454, true, Skoda, 2012";
+    public static MotorBoard MOTORBOAT = new MotorBoard("7387483264", true, "Motorboat", LocalDate.of(2019, 05, 8), 2000, "2100" );
+    public static Amphibian AMPHIBIAN1 = new Amphibian("54354545454", true, "Amphibian", LocalDate.of(2018, 8, 6), 3000, 1400, 5000);
+    public static Car CAR = new Car("648384766", true, "Amphibian", LocalDate.of(2018, 8, 6), 3000, BodyType.COUPE);
+
 
 }
